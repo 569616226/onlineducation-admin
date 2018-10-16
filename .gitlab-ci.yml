@@ -1,0 +1,10 @@
+stages:
+- develop
+deploy:
+  stage: develop
+  script:
+    - deploy5 public_html onlineducation-admin
+  only:
+    - develop
+  tags:
+    - develop
